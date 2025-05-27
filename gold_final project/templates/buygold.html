@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Gold - Your Gold Investment Platform</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f9fb;
+            color: #333;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+        }
+        .btn-custom {
+            background-color: #333;
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        .section-title {
+            margin-bottom: 30px;
+            border-bottom: 2px solid gold;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .newsletter {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="py-4 text-center">
+        <h1>Buy Gold</h1>
+    </header>
+    <div class="container my-5">
+        <section class="intro mb-5">
+            <h2 class="section-title">Welcome to Your Gold Investment Platform</h2>
+            <p class="lead">Investing in gold has never been easier. Whether you're a seasoned investor or just starting, our platform provides a secure and straightforward way to diversify your portfolio with gold.</p>
+        </section>
+
+        <section class="why-gold mb-5">
+            <h2 class="section-title">Why Invest in Gold?</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Stability</h5>
+                            <p class="card-text">Gold has a long history of maintaining value.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Inflation Hedge</h5>
+                            <p class="card-text">Protect your wealth against inflation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Diversification</h5>
+                            <p class="card-text">Add a reliable asset to your investment portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Liquidity</h5>
+                            <p class="card-text">Easily buy and sell gold at market value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products mb-5">
+            <h2 class="section-title">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/gold-bars.jpeg') }}" class="card-img-top" alt="Gold Bars">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Bars</h5>
+                            <p class="card-text">Available in various weights, from 1 gram to 1 kilogram.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/gold-coins.jpeg') }}" class="card-img-top" alt="Gold Coins">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Coins</h5>
+                            <p class="card-text">Popular coins such as the American Eagle, Canadian Maple Leaf, and South African Krugerrand.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/gold-etf.jpeg') }}" class="card-img-top" alt="Gold ETFs">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold ETFs</h5>
+                            <p class="card-text">Invest in gold without physical storage, with Exchange-Traded Funds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps mb-5">
+            <h2 class="section-title">How to Buy Gold</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Step 1: Create an Account</h5>
+                            <p class="card-text">Sign up with your email and complete the registration process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Step 2: Verify Your Identity</h5>
+                            <p class="card-text">For security reasons, we require identity verification. Please have your government-issued ID ready.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Step 3: Choose Your Product</h5>
+                            <p class="card-text">Select the type and amount of gold you wish to purchase.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Step 4: Make a Payment</h5>
+                            <p class="card-text">We accept various payment methods, including bank transfers, credit/debit cards, and cryptocurrencies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Step 5: Secure Storage or Delivery</h5>
+                            <p class="card-text">Opt for secure storage in our high-security vaults or choose to have your gold delivered to your preferred location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security mb-5">
+            <h2 class="section-title">Security and Assurance</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Insurance</h5>
+                            <p class="card-text">All gold stored with us is fully insured.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Transparency</h5>
+                            <p class="card-text">Real-time updates on your investments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Support</h5>
+                            <p class="card-text">Our team of experts is available to assist you with any questions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials mb-5">
+            <h2 class="section-title">Customer Testimonials</h2>
+            <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"Investing in gold has been a game-changer for me. Highly recommend it to anyone looking to diversify their investments."</p>
+                            <footer class="blockquote-footer">Jane D.</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"The process was straightforward, and I feel confident knowing my gold is stored securely."</p>
+                            <footer class="blockquote-footer">Mark S.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact mb-5">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions or need assistance? Our customer support team is here to help.</p>
+            <div class="contact-info mb-3">
+                <p><strong>Email:</strong> <a href="mailto:shrikantvibhute7798@gmail.com">shrikantvibhute7798@gmail.com</a></p>
+                <p><strong>Phone:</strong> 90753 82075</p>
+                <p><strong>Live Chat:</strong> Available on our website</p>
+            </div>
+            <div class="newsletter">
+                <h3>Stay Informed</h3>
+                <p>Sign up for our newsletter to receive updates on gold prices, market trends, and exclusive offers.</p>
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                    </div>
+                    <button type="submit" class="btn btn-custom mb-2">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq mb-5">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the minimum amount of gold I can purchase?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            The minimum purchase is 1 gram of gold.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can I sell my gold?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            You can sell your gold back to us or through our platform to other buyers.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Is my personal information secure?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, we use advanced encryption to protect your data.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What fees are associated with buying gold?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Please refer to our <a href="#">fee schedule</a> for detailed information.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup mb-5 text-center">
+            <h2>Start your journey to secure and profitable gold investment today.</h2>
+            <a href="{{ url_for('home   ') }}" class="btn btn-custom btn-lg">Create an Account</a>
+        </section>
+    </div>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0"><strong>Disclaimer:</strong> Investing in gold involves risks, including potential loss of value. Ensure you fully understand the risks before investing.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
